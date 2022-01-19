@@ -14,16 +14,18 @@ h2 {
 .info {
   padding: 230px 20px;
   background-image: url(src/background-image.jpg);
-  opacity: 0.6;
 }
 .homepage-about h2 {
   text-align: left;
 }
 .homepage-contact {
+  font-family: "PT Mono", monospace;
   background-color: #f9f7fe;
   border-radius: 20px;
-  margin: 40px 30px;
+  margin: 40px 80px;
   padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
 }
 .hp-btn {
   border-radius: 5px;
