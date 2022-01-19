@@ -13,7 +13,7 @@ h2 {
 }
 .info {
   padding: 230px 20px;
-  background-image: url(source/background-image.jpg);
+  background-image: url(src/background-image.jpg);
   opacity: 0.6;
 }
 .homepage-about h2 {
