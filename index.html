@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Front End Developer- Nicole Yuen</title>
+    <title>Front-End Developer- Nicole Yuen</title>
     <meta
       name="description"
-      content="front end eveloper, Nicole Yuen's portfolio, check out my projects here"
+      content="Front-End Developer, Nicole Yuen's portfolio, check out my projects here!"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -81,11 +81,40 @@
     </div>
     <div class="homepage-projects">
       <h3 class="mt-5 mb-3">Projects at a glance 📸</h3>
-    <div class="project-img">
-      <img src="src/photography.png" alt="" class="img-fluid shadow p-2 mb-5 bg-body rounded">
-      <img src="src/weather-app.png" alt="" class="img-fluid shadow p-2 mb-5 bg-body rounded">
-      <img src="src/xmas-present.png" alt="" class="img-fluid shadow p-2 mb-5 bg-body rounded">
+  <div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <div class="container d-flex justify-content-center">
+      <img src="src/photography.png" class="d-block w-40 img-fluid shadow p-2 mb-5 bg-body rounded" alt="photography landing page thumbnail">
     </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+         <div class="container d-flex justify-content-center">
+      <img src="src/weather-app.png" class="d-block w-40 img-fluid shadow p-2 mb-5 bg-body rounded" alt="weather app thumbnail">
+      
+    </div>
+    </div>
+    <div class="carousel-item">
+         <div class="container d-flex justify-content-center">
+      <img src="src/xmas-present.png" class="d-block w-40 img-fluid shadow p-2 mb-5 bg-body rounded" alt="xmas present page thumbnail">
+    </div>
+  </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
     <a href="#" class="btn btn-outline-primary homepage-button mb-3">My Projects</a>
     <div class="homepage-contact">
       <div>
@@ -94,17 +123,18 @@
       </div>
       <div><a href="#" class="btn btn-outline-primary homepage-button">Contact Me</a></div>
     </div>
+    
     <footer class="mb-2">
-      <div>  <a href="https://github.com/Nicoleyuen1/responsive-week4-hw">Open-source code</a>
+      <div>  <a href="https://github.com/Nicoleyuen1/responsive-week4-hw" target="_blank" >Open-source code</a>
       by Nicole Yuen, hosted on Netify</div>
       Background image by
       <a
-        href="https://unsplash.com/@hishahadat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        href="https://unsplash.com/@hishahadat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"
         >Shahadat Rahman</a
       >
       on
       <a
-        href="https://unsplash.com/s/photos/coder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        href="https://unsplash.com/s/photos/coder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"
         >Unsplash</a
       >
     </footer>
