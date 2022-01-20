@@ -11,50 +11,58 @@ h2,
 h3,
 p,
 footer,
-.homepage-button {
+#homepage-button {
   font-family: var(--primary-font);
   color: var(--font-color);
 }
 .navbar {
   background-color: rgb(170, 249, 218);
 }
-.header-container {
+
+.navbar-brand {
+  font-size: 20px;
+}
+.navbar-brand:hover {
+  font-size: 18px;
+}
+
+#header-container {
   padding: 220px 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(src/background-image.jpg);
+    url(img/background-image.jpg);
 }
-.header-text {
+#header-text {
   text-align: center;
 }
-.header-text h1 {
+#header-text h1 {
   color: white;
   font-size: 90px;
 }
-.header-text h2 {
+#header-text h2 {
   color: rgb(213, 211, 211);
   font-size: 45px;
 }
-.homepage-about-me {
+#homepage-about-me {
   text-align: center;
 }
-.homepage-about-me h2 {
+#homepage-about-me h2 {
   font-weight: 700;
 }
-.homepage-about-me p {
+#homepage-about-me p {
   line-height: 0.7cm;
 }
-.homepage-projects {
+#homepage-projects {
   text-align: center;
 }
-.homepage-projects h3 {
+#homepage-projects h3 {
   font-weight: 700;
 }
-.project-img {
+#project-img {
   display: flex;
   justify-content: space-around;
 }
 
-.homepage-contact {
+#homepage-contact {
   background-color: rgb(170, 249, 218);
   border-radius: 15px;
   margin: 40px 80px;
@@ -63,17 +71,17 @@ footer,
   justify-content: space-between;
   text-align: left;
 }
-.homepage-contact h3 {
+#homepage-contact h3 {
   font-weight: 700;
 }
-.homepage-button {
+#homepage-button {
   border-radius: 28px;
   padding: 20px 10px;
   border-color: rgb(250, 75, 104);
   color: rgb(247, 81, 109);
   font-weight: 500;
 }
-.homepage-button:hover {
+#homepage-button:hover {
   cursor: pointer;
   background-color: rgb(247, 135, 153);
   border-color: rgb(250, 75, 104);
@@ -87,34 +95,34 @@ footer {
   font-size: small;
 }
 @media (max-width: 576px) {
-  .header-text h1 {
+  #header-text h1 {
     font-size: 70px;
   }
-  .header-text h2 {
+  #header-text h2 {
     font-size: 35px;
   }
-  .homepage-about-me {
+  #homepage-about-me {
     padding: 10px;
   }
-  .homepage-about-me h2 {
+  #homepage-about-me h2 {
     font-size: 30px;
   }
-  .homepage-about-me p {
+  #homepage-about-me p {
     font-size: 15px;
     line-height: 0.7cm;
   }
-  .homepage-contact h3 {
+  #homepage-contact h3 {
     font-size: 20px;
   }
-  .homepage-contact p {
+  #homepage-contact p {
     font-size: 15px;
   }
-  .project-img {
+  #project-img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  .homepage-contact {
+  #homepage-contact {
     margin: 20px 15px;
   }
 }
