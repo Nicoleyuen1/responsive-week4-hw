@@ -1,45 +1,82 @@
+:root {
+  --primary-font: "PT Mono", monospace;
+  --font-color: rgb(55, 54, 54);
+}
+
+body {
+  background-color: rgb(192, 247, 226);
+}
 h1,
 h2,
-h3 {
-  font-family: "PT Mono", monospace;
+h3,
+p,
+nav,
+footer {
+  font-family: var(--primary-font);
+  color: var(--font-color);
 }
 
 .header-container {
-  padding: 230px 20px;
+  padding: 210px 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(src/background-image.jpg);
 }
 .header-text {
-  color: white;
   text-align: center;
 }
 .header-text h1 {
+  color: white;
   font-size: 90px;
 }
 .header-text h2 {
+  color: white;
   font-size: 45px;
 }
-.homepage-about {
+.homepage-about-me {
   text-align: center;
+}
+.homepage-about-me h2 {
+  font-weight: 700;
 }
 .homepage-projects {
   text-align: center;
 }
+.homepage-projects h3 {
+  font-weight: 700;
+}
+.project-img {
+  display: flex;
+  justify-content: space-around;
+}
+
 .homepage-contact {
-  font-family: "PT Mono", monospace;
-  background-color: #f9f7fe;
+  background-color: rgb(170, 249, 218);
   border-radius: 20px;
   margin: 40px 80px;
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
 }
-
-.hp-btn {
+.homepage-contact h3 {
+  font-weight: 700;
+  text-align: left;
+}
+.homepage-button {
   border-radius: 30px;
   padding: 20px;
+  border-color: rgb(250, 75, 104);
+  color: rgb(247, 81, 109);
+  font-weight: 500;
 }
-.project-img {
-  display: flex;
-  justify-content: space-around;
+.homepage-button:hover {
+  background-color: rgb(247, 135, 153);
+  border-color: rgb(250, 75, 104);
+}
+
+@media (max-width: 576px) {
+  .project-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
