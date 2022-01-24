@@ -94,6 +94,11 @@ footer,
 footer {
   font-size: small;
 }
+
+#skill-logos {
+  text-align: center;
+}
+
 @media (max-width: 576px) {
   #header-text h1 {
     font-size: 70px;
