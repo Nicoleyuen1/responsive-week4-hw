@@ -7,7 +7,7 @@ body {
   background-color: rgb(214, 250, 236);
 }
 #about-page {
-  margin: 120px 0;
+  margin-top: 120px;
 }
 
 h1,
@@ -78,14 +78,14 @@ footer,
 #homepage-contact h3 {
   font-weight: 700;
 }
-#homepage-button {
+#home-page-button {
   border-radius: 28px;
   padding: 20px 10px;
   border-color: rgb(250, 75, 104);
   color: rgb(247, 81, 109);
   font-weight: 500;
 }
-#homepage-button:hover {
+#home-page-button:hover {
   cursor: pointer;
   background-color: rgb(247, 135, 153);
   color: white;
@@ -104,6 +104,24 @@ footer {
   text-align: center;
 }
 
+#project-page-button {
+  border-radius: 28px;
+  padding: 10px 10px;
+  border-color: rgb(250, 75, 104);
+  color: rgb(247, 81, 109);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#project-page-button:hover {
+  cursor: pointer;
+  background-color: rgb(247, 135, 153);
+  color: white;
+  border-color: rgb(250, 75, 104);
+  transition: all 200ms ease-in-out;
+  font-weight: bold;
+  letter-spacing: 1.5;
+  text-transform: uppercase;
+}
 @media (max-width: 576px) {
   #header-text h1 {
     font-size: 70px;
