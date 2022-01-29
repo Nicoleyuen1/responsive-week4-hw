@@ -1,8 +1,8 @@
 :root {
-  --primary-font: "PT Mono", monospace;
-  --second-font: "PT Sans Caption", sans-serif;
-  --font-color: rgb(106, 101, 101);
-  --second-font-color: rgb(250, 117, 139);
+  --heading-font: "PT Sans Caption", sans-serif;
+  --paragraph-font: "PT Mono", monospace;
+  --primary-font-color: rgb(250, 117, 139);
+  --second-font-color: rgb(112, 161, 213);
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 #about-page,
 #project-page,
 #contact-page {
-  margin-top: 120px;
+  margin-top: 110px;
 }
 
 #about-page,
@@ -27,17 +27,15 @@ footer {
 
 h1,
 h2,
-h3,
-h4 {
-  color: var(--second-font-color);
-  font-family: var(--second-font);
+h3 {
+  color: var(--primary-font-color);
+  font-family: var(--heading-font);
 }
 
 p,
-footer,
-#homepage-button {
-  font-family: var(--primary-font);
-  color: var(--font-color);
+footer {
+  font-family: var(--paragraph-font);
+  color: var(--second-font-color);
 }
 .navbar {
   background-color: rgb(170, 249, 218);
@@ -45,12 +43,15 @@ footer,
 
 .navbar-brand {
   font-size: 20px;
-  border-color: var(--second-font-color) !important;
+  border-color: var(--primary-font-color) !important;
   color: rgb(247, 81, 109) !important;
-  font-family: var(--primary-font) !important;
+  font-family: var(--heading-font) !important;
 }
 .navbar-brand:hover {
   font-size: 18px;
+}
+.navbar-nav a {
+  color: var(--second-font-color) !important;
 }
 
 #header-container {
@@ -58,32 +59,28 @@ footer,
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(img/background-image.jpg);
 }
-#header-text {
-  text-align: center;
-}
+
 #header-text h1 {
-  color: white;
+  color: var(--primary-font-color);
   font-size: 90px;
 }
 #header-text h2 {
-  color: rgb(213, 211, 211);
+  color: rgb(223, 155, 166);
   font-size: 45px;
 }
-#homepage-about-me {
-  text-align: center;
-}
-#homepage-about-me h2 {
+
+#home-page h2,
+#about-page h2,
+#project-page h2,
+#contact-page h1 {
   font-weight: 700;
 }
-#homepage-about-me p {
+#home-page p,
+#about-page p,
+#project-page p {
   line-height: 0.7cm;
 }
-#homepage-projects {
-  text-align: center;
-}
-#homepage-projects h3 {
-  font-weight: 700;
-}
+
 #project-img {
   display: flex;
   justify-content: space-around;
@@ -104,7 +101,7 @@ footer,
 #home-page-button {
   border-radius: 28px;
   padding: 20px 10px;
-  border-color: rgb(250, 75, 104);
+  border-color: var(--primary-font-color);
   color: rgb(247, 81, 109);
   font-weight: 500;
 }
@@ -112,7 +109,6 @@ footer,
   cursor: pointer;
   background-color: rgb(247, 135, 153);
   color: white;
-  border-color: rgb(250, 75, 104);
   transition: all 200ms ease-in-out;
   font-weight: bold;
   letter-spacing: 2px;
@@ -123,6 +119,14 @@ footer {
   font-size: small;
 }
 
+footer a {
+  text-decoration: none;
+}
+
+#contact-details a {
+  color: var(--second-font-color);
+}
+
 #skill-logos {
   text-align: center;
 }
@@ -130,7 +134,7 @@ footer {
 #project-page-button {
   border-radius: 28px;
   padding: 10px 10px;
-  border-color: rgb(250, 75, 104);
+  border-color: var(--primary-font-color);
   color: rgb(247, 81, 109);
   font-weight: 400;
   margin-bottom: 20px;
@@ -139,7 +143,6 @@ footer {
   cursor: pointer;
   background-color: rgb(247, 135, 153);
   color: white;
-  border-color: rgb(250, 75, 104);
   transition: all 200ms ease-in-out;
   font-weight: bold;
   letter-spacing: 1.5;
@@ -155,15 +158,12 @@ footer {
   #header-text h2 {
     font-size: 35px;
   }
-  #homepage-about-me {
-    padding: 10px;
-  }
-  #homepage-about-me h2 {
+
+  #home-page h2 {
     font-size: 30px;
   }
-  #homepage-about-me p {
+  #home-page p {
     font-size: 15px;
-    line-height: 0.7cm;
   }
   #homepage-contact-box h3 {
     font-size: 20px;
