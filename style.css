@@ -131,6 +131,9 @@ footer a {
   text-align: center;
 }
 
+#project-page-heading {
+  margin-bottom: 60px;
+}
 #project-page-button {
   border-radius: 28px;
   padding: 10px 10px;
@@ -178,5 +181,25 @@ footer a {
   }
   #homepage-contact-box {
     margin: 20px 15px;
+  }
+
+  #project-page-heading {
+    margin-bottom: 10px;
+  }
+
+  #project-page h3,
+  #project-page p {
+    text-align: center;
+  }
+  #project-page-button {
+    display: block;
+    text-align: center;
+    margin: 10px 100px;
+  }
+  #project-page h3 {
+    margin-top: 30px;
+  }
+  #project-page footer {
+    margin-top: 20px;
   }
 }
