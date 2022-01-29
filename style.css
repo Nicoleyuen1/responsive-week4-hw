@@ -1,6 +1,8 @@
 :root {
   --primary-font: "PT Mono", monospace;
-  --font-color: rgb(77, 76, 76);
+  --second-font: "PT Sans Caption", sans-serif;
+  --font-color: rgb(106, 101, 101);
+  --second-font-color: rgb(250, 117, 139);
 }
 
 body {
@@ -12,10 +14,25 @@ body {
   margin-top: 120px;
 }
 
+#about-page,
+#project-page,
+#contact-page {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin: auto;
+}
+
 h1,
 h2,
 h3,
-h4,
+h4 {
+  color: var(--second-font-color);
+  font-family: var(--second-font);
+}
+
 p,
 footer,
 #homepage-button {
@@ -28,13 +45,16 @@ footer,
 
 .navbar-brand {
   font-size: 20px;
+  border-color: var(--second-font-color) !important;
+  color: rgb(247, 81, 109) !important;
+  font-family: var(--primary-font) !important;
 }
 .navbar-brand:hover {
   font-size: 18px;
 }
 
 #header-container {
-  padding: 200px 20px;
+  padding: 220px 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(img/background-image.jpg);
 }
@@ -124,6 +144,9 @@ footer {
   font-weight: bold;
   letter-spacing: 1.5;
   text-transform: uppercase;
+}
+#contact-details a {
+  text-decoration: none;
 }
 @media (max-width: 576px) {
   #header-text h1 {
