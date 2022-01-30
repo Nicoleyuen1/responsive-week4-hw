@@ -21,8 +21,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 footer {
-  margin: auto;
+  margin-top: auto;
 }
 
 h1,
